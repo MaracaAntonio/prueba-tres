@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>
+			AntonioServ
+		</title>
+		<meta name="author" content="Brayner"/>
+		<meta name="description" content="pagina para conseguir soporte tecnico en equipos de refrigeracion"/>
+		<meta name="keywords" content="servicio, tecnico,aires, venezuela, estado, bolivar,refrigeracion, acondicionado, maraca,"/>
+		<link rel="stylesheet" href="estilos.css">
+	</head>
+	<body>
+		<header id="header">
+			<div id="barraNavegacion">
+				<p id="refri">ANTONIO</p>
+				<nav id="nav">
+					<a href="#trabajos">Servicios</a>
+					<a href="#informacion">Info</a>
+					<a href="#contactos">Preguntas</a>
+				</nav>
+			</div>
+			<div class="container" id="ctnHeader">
+				<div class="center" id="headerLeft">
+					<h1>¿NECESITAS AYUDA?</h1>
+					<hr>
+					<p>
+						-¿Tu nevera no enfria, tu aire solo refresca o tu freezer no congela y vives en el Estado Bolivar?.
+					</p>
+					<p>
+						No te preocupes más, nuestros tecnicos son especialistas en sus areas y con años de experiencia
+					</p> 
+					<p>
+						Somos un servicio de reparación de tus equipos de refrigeración.
+					</p>
+					<a href="#contactos" class="btnRed">Contactar</a>
+				</div>
+				<div class="center" id="headerRight">
+					<ul class="slider";>
+						<li id="slideOne">
+							<img src="Imagenes/Promo00.jpg"/>
+						</li>
+						<li id="slideTwo">
+							<img src="Imagenes/Promo01.jpg"/>
+						</li>
+						<li id="slideThree">
+							<img src="Imagenes/Promo02.jpg"/>
+						</li>
+						<li id="slideFord">
+							<img src="Imagenes/Promo03.jpg"/>
+						</li>
+					</ul>
+					<ul class="menu">
+						<li>
+							<a href="#slideOne">.</a>
+						</li>
+						<li>
+							<a href="#slideTwo">.</a>
+						</li>
+						<li>
+							<a href="#slideThree">.</a>
+						</li>
+						<li>
+							<a href="#slideFord">.</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<section>
+			<article id="trabajos">
+				<h2 class="lineBlue">Trabajo</h2>
+				<div class="container">
+					<div class="adaptacion">
+						<h4>Revision</h4>
+						<p>
+						-El proceso de revisión del equipo dañado solo se cobrará si el destino es bastante alejado de nuetro base de operación.
+						</p>
+						<p>
+						Este puede aplicarse parcial o completamente para designar que falla solucionar y posteriormente pasar al presupuesto.
+						</p>
+					</div>
+					<div class="adaptacion">
+						<h4>Presupuesto</h4>
+						<p>
+							-Nuestro técnico evalua los posibles problemas y proporcionan un plan de acción
+							</p>
+							<p>
+							Partes defectuosas, mal funcionamiento, bajo rendimiento o comportamiento inusual del aparato se le evaluará un presupuesto de compra para proseguir con el Reparación Final
+						</p>
+					</div>
+					<div class="adaptacion">
+						<h4>Reparación Final</h4>
+						<p>
+							-Procede a la instalación  o repación del equipo en el tiempo disponible por el cliente.
+							</p>
+							<p>
+							Se termina el mantenimiento, y comienza el periodo de prueba de funcionamiento
+							</p>
+							<p>
+							Disfrute de nuestros servicios 
+						</p>
+					</div>
+				</div>
+				<div class="centerA">
+					<a href="#contactos" class="btnRed">Contactar</a>
+				</div>
+			</article>
+			<article id="informacion">
+				<h3 class="lineBlue">Sobre Nosotros</h3>
+				<div class="container">
+					<div class="center" id="sobreNosotros">
+						<p>
+							-Somos un servicio de soperte técnico para equipos de refrigeración, insdustriales y comerciales para mejorar su calidad de vida al mejor precio.
+						</p>
+						<p>
+							Cada día ayudamos a cientos de personas ubicadas por todo el Estado con los diversos sistema de mantenimiento para sus maquinarias.
+						</p>
+						<p>
+							Atencion de mejor calidad y disponiblidad de lunes a sabado
+							en su horario preferido.
+						</p>
+						<a href="#contactos" class="btnRed">Contactar</a>
+					</div>
+					<div id="conGrid">
+						<img src="Imagenes/Promo00.jpg"/>
+						<img src="Imagenes/Promo01.jpg"/>
+						<img src="Imagenes/Promo02.jpg"/>
+						<img src="Imagenes/Promo03.jpg"/>
+					</div>
+				</div>
+			</article>
+			<article id="contactos">
+				<p class="lineBlue">
+				Contactanos y cuentanos tu problema
+				</p>
+				<div class="container" id="contactar">
+					<form action="enviar.php" 
+					method="post">
+					<div>
+						<label>Nombre</label><br>
+						<input type="text" name="name" id="name" placeholder="Nombre" required></input>
+						
+						<br>
+						<label>E-mail / Tlf</label><br>
+						<input type="text" name="mail" id="mail" placeholder="E-mail / Telefono"required></input>
+					</div>
+					<div>
+						<label>Problema</label><br>
+						<textarea name="message" id="message" placeholder="Cuentanos cual es el problema con el equipo..." required></textarea>
+						
+					</div>
+						<div class="centerA" id="centerA">
+							<button type="submit" class="btnRed">ENVIAR</button>
+						</div>
+					</form>
+				</div>
+				
+			</article>
+			<article>
+				
+			</article>
+		</section>
+		
+		<aside></aside>
+		
+		<footer>
+			<p class="lineBlue" id="lineBlue">&copy Copyright 2021</p>
+		</footer>
+		<script src="main.js"></script>
+		<?php 
+			include("enviar.php");
+		?>
+	</body>
+</html>

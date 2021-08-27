@@ -1,0 +1,298 @@
+ *{
+	 margin:0;
+	 padding:0;
+ }
+ img{
+	 width:100%;
+ }
+ hr{
+	 margin:1rem;
+	 border-color:#DC143C;
+	 width:100%;
+ }
+ 
+ /*Barra de Navegacion*/
+ 
+ #barraNavegacion{
+	 display:flex;
+	 flex-direction:row;
+	 justify-content:space-between;
+	 padding:1rem;
+	 /*width:100%;*/
+	 background:#292944;
+ }
+ #nav{
+	 margin-top:0.5rem;
+ }
+ #nav a{
+	 margin-right:1.5rem;
+	 margin-top:2rem;
+	 text-decoration:none;
+	 color:#fff;
+	 font-size:20px;
+	 padding:2rem 0.75rem;
+ }
+ #nav a:hover{
+	 margin-right:1.5rem;
+	 margin-top:2rem;
+	 text-decoration:none;
+	 color:#fff;
+	 background:#DC143C;
+	 font-size:20px;
+ }
+ 
+ #refri{
+	 font-size:36px;
+	 font-family:arial;
+	 margin-left:2rem;
+	 color:#fff;
+ }
+ 
+ /*----------------------------*/
+ /*Header */
+ .container{
+	 display:flex;
+	 flex-direction:center;
+	 justify-content:center;
+ }
+ 
+ .center{
+	 text-align:center;
+	 width:100%;
+ }
+ 
+ 
+ #headerLeft{
+	padding:6rem 6rem;
+}
+ #headerLeft h1{
+	margin-bottom:1rem;
+}
+ #headerLeft p{
+	margin-bottom:1rem;
+	font-size:18px;
+	width:100%;
+}
+
+ #headerRight{
+	margin:6rem 3rem 3rem 0rem;
+	width:100%;
+}
+ 
+ .btnRed{
+	 text-decoration:none;
+	 font-size:20px;
+	 color:#fff;
+	 background:#DC143C;
+	 padding:0.5rem 1.5rem;
+	 border-radius:20px;
+ }
+ .btnRed:hover{
+	 text-decoration:none;
+	 color:#fff;
+	 font-size:20px;
+	 background:#A52A2A;
+	 padding:0.5rem 1.5rem;
+	 border-radius:20px;
+ }
+ /*Imagenes moviles*/
+ ul, li{
+	 list-style:none;
+ } 
+ 
+ ul.slider{
+	 position:relative;
+	 width:100%;
+	 height:200px;
+ }
+ 
+ ul.slider li{
+	 position:absolute;
+	 opacity:0;
+	 width:inherit;
+	 height:inherit;
+	 transition:opacity .5s;
+ }
+ 
+ ul.slider li img{
+	 height:100%;
+	 object-fit:cover;
+ }
+ ul.slider li:first-child{
+	 opacity:1;
+ }
+ 
+ 
+ .menu{
+	 text-align:center;
+	 margin:20px;
+ }
+ 
+ .menu li{
+	 display: inline-block;
+	 text-align:center;
+ }
+ .menu li a{
+	 display: inline-block;
+	 color:#DC143C;
+	 text-decoration:none;
+	 padding:0.1rem;
+	 background:#DC143C;
+	 width:20px;
+	 height:20px;
+	 border-radius:100%;
+ }
+ 
+ ul.slider li:target{
+	 opacity:1;
+ }
+ /*-----------------*/
+ /*----------------------------*/
+ /*Secciones Articulo 1 Trabajos*/
+ .lineBlue{
+	 background:#292944;
+	 padding:1rem 3rem;
+	 color:#fff;
+	 font-size:22px;
+	 font-family:cursive;
+	 max-width:100%;
+ }
+ .adaptacion{
+	 width:100%;
+	 text-align:center;
+	 padding:2rem 2rem;
+ }
+ .adaptacion h4{
+	 margin-bottom:1rem;
+	 font-size:20px;
+	 background:#C0C0C0;
+	 padding:0.5rem 1rem;
+	 /*border-radius:30px;*/
+ }
+ .adaptacion p{
+	 margin-bottom:1rem;
+	 background:#D3D3D3;
+	 padding:0.5rem 1rem;
+	 /*border-radius:30px;*/
+ }
+ #trabajos{
+	 padding-bottom:2rem;
+ }
+ .centerA{
+	 margin-top:1rem;
+	 text-decoration:none;
+	 text-align:center;
+ }
+ /*----------------------------*/
+ /*Secciones Articulo 2 Informacion*/
+ #conGrid{
+	 display:grid;
+	 grid-template-columns: repeat(2,1fr);
+	 margin:4rem 3rem 1rem 2rem;
+	 height:100%;
+ }
+ #sobreNosotros{
+	 margin:1rem 3rem 2rem 6rem;
+	 text-align:center;
+ }
+ #sobreNosotros p{
+	 margin-bottom:2rem;
+	 margin-top:2rem;
+	 font-size:16px;
+	 width:100%;
+ }
+ #informacion{
+	 padding-bottom:3rem;
+ }
+ 
+ /*----------------------------*/
+ /*Secciones Articulo 3 Contactos*/
+ #contactos{
+	padding-bottom:2rem;
+ }
+ #contactos p{
+	text-align:center; 
+ }
+ #contactar{
+	 padding-top:4rem ;
+	 padding-bottom:1rem;
+ }
+ input{
+	 margin-bottom:1rem;
+	 margin-right:2rem;
+	 margin-top:1rem;
+	 min-width:12rem;
+	 min-height:2rem;
+ }
+ textarea{
+	 min-width:12rem;
+	 min-height:7.5rem;
+	 
+	 max-width:12rem;
+	 max-height:7.5rem;
+	 margin-top:1rem;
+ }
+	 /*Labels*/
+		label{
+			margin-right:0.5rem;
+			padding:0.5rem 1rem;
+			background:#292944;
+			color:#fff;
+			font-family:sans-serif;
+			border-radius:20px;
+			margin-bottom:2rem;
+		}
+	 /**---------------------------/
+ /*----------------------------*/
+ /*Footer*/
+ #lineBlue{
+	 text-align:center;
+	 font-size:14px;
+	 /*padding:0.5rem;*/
+ }
+ 
+ /*RESPONSIBLE*/
+ 
+ @media screen and (max-width: 800px){
+	 .container{
+		 display:block;
+		 flex-direction:center;
+		 justify-content:center;
+	}
+	
+	#headerLeft{
+		width:80%;
+		text-align:center;
+		padding:1rem 4rem;
+	}
+	#headerRight{
+		margin:1rem 4rem;
+		width:80%;
+	}
+	
+	/*Trabajos*/
+	.adaptacion{
+		 width:80%;
+		 text-align:center;
+		 padding:1rem 0;
+		 margin:0 4rem;
+	}
+	/*Sobre nosotros*/
+	#sobreNosotros{
+		 width:80%;
+		 margin:0 4rem;
+		 text-align:center;
+	}
+	/*seccion de contactar*/
+	#contactar{
+		width:80%;
+		margin-left:4rem;
+	}
+	
+ }
+ 
+ /*----------------------------*/
+ /*Sus precios accesibles y revision donde te encuentres, No esperes más llegaste al lugar indicado.*/
+ 
+ /*antoniomaracaserv.000webhostapp.com*/
+ /*https://maracaantonio.github.io/AntonioAires/*/
